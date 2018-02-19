@@ -18,6 +18,7 @@ include 'inc/functions.php';
         <!--<img src="img/cherry.png" alt="cherry" title="Cherry" width="70" />-->
         <?php
         $playerList = array("");
+        
         $deck = array("hearts" => $hearts);
         $deck = array("diamonds" => $diamonds);
         $deck = array("spades" => $spades);
