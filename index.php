@@ -18,7 +18,20 @@ include 'inc/functions.php';
         <!--<img src="img/cherry.png" alt="cherry" title="Cherry" width="70" />-->
         <?php
         $playerList = array("");
-        $cards = array("");
+        $deck = array("hearts" => $hearts);
+        $deck = array("diamonds" => $diamonds);
+        $deck = array("spades" => $spades);
+        $deck = array("clubs" => $clubs);
+
+        $deck["hearts"] = array('1','2','3','4','5','6','7','8','9','11','12','13');
+        $deck["diamonds"] = array('1','2','3','4','5','6','7','8','9','11','12','13');
+        $deck["spades"] = array('1','2','3','4','5','6','7','8','9','11','12','13');
+        $deck["clubs"] = array('1','2','3','4','5','6','7','8','9','11','12','13');
+        
+       for ($i = 0; $i < count($deck); $i++) {
+                    echo "<li>Card ($i): ".$deck[$i]."</li>";
+       }
+        
         ?>
         <form>
             
